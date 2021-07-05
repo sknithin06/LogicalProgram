@@ -46,5 +46,22 @@ public class basicProgram {
 			value = value / 10;
 		}
 		System.out.println("Reverse of the given number is:"+rev);		
+	
+		System.out.print("Enter a number:"); 
+		int number = sc.nextInt();
+		int sum = 0;
+		int i = 1;
+	 while ( i < number / 2) {
+			if (number % i == 0) {
+				sum = sum + i;
+			}
+			i = i + 1;
+		}
+		if (sum == number) {
+			System.out.println("Given number is Perfect number is:"+number);
+		}
+		else {
+			System.out.println("Given number is Perfect number is:"+number);
+		}
 	}	
 }
