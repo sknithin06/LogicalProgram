@@ -25,5 +25,16 @@ public class basicProgram {
 			}
 		
 		}
+		System.out.print("Enter a number:"); 
+		int num = sc.nextInt();
+		int num1 = 0, num2 = 1,fibnum;
+		System.out.println("Fibonacci number is:"+num1);
+		System.out.println("Fibonacci number is:"+num2);
+		for (int i = 2; i <= num; i++) {
+			fibnum = num1 + num2;
+			System.out.println("Fibonacci number is:"+fibnum);
+			num1 = num2;
+			num2 = fibnum;
+		}
 	}	
 }
