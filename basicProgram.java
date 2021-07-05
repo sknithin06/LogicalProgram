@@ -23,8 +23,8 @@ public class basicProgram {
 			if (flag == 0) {
 				System.out.println("given number is prime number:"+primeNum);	
 			}
-		
 		}
+		
 		System.out.print("Enter a number:"); 
 		int num = sc.nextInt();
 		int num1 = 0, num2 = 1,fibnum;
@@ -36,5 +36,15 @@ public class basicProgram {
 			num1 = num2;
 			num2 = fibnum;
 		}
+		
+		System.out.print("Enter a number:"); 
+		int value = sc.nextInt();
+		int rem = 0, rev = 0;
+		while (value != 0) {
+			rem = value % 10;
+			rev = rem + rev * 10;
+			value = value / 10;
+		}
+		System.out.println("Reverse of the given number is:"+rev);		
 	}	
 }
