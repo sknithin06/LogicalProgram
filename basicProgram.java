@@ -51,7 +51,7 @@ public class basicProgram {
 		int number = sc.nextInt();
 		int sum = 0;
 		int i = 1;
-	 while ( i < number / 2) {
+		while ( i < number / 2) {
 			if (number % i == 0) {
 				sum = sum + i;
 			}
@@ -63,5 +63,18 @@ public class basicProgram {
 		else {
 			System.out.println("Given number is Perfect number is:"+number);
 		}
+		
+		char[] charArray="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789".toCharArray();
+		int max=100000000;
+		int couponNum = (int) (Math.random()*max);	
+		StringBuffer sb=new StringBuffer();
+		
+		while (couponNum>0) {
+			sb.append(charArray[couponNum % charArray.length]);
+			couponNum = couponNum /charArray.length;
+		}
+
+		String couponCode=sb.toString();
+		System.out.println("Coupon Code is generated: "+couponCode);	
 	}	
 }
