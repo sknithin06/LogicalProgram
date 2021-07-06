@@ -1,8 +1,8 @@
 package bridgelabz;
 import java.util.Scanner;
-public class basicProgram {
-	public static final Scanner sc= new Scanner(System.in);
-	public static void main(String[] args) {
+public class basicProgram {	
+		public static final Scanner sc= new Scanner(System.in);		  
+		public static void main(String[] args) {
 		System.out.println("Welcome to BasicCoreProgram");
 	
 		System.out.print("Enter a number:"); 
@@ -75,6 +75,8 @@ public class basicProgram {
 		}
 
 		String couponCode=sb.toString();
-		System.out.println("Coupon Code is generated: "+couponCode);	
+		System.out.println("Coupon Code is generated: "+couponCode);
+		
+		
 	}	
 }
